@@ -140,7 +140,7 @@ body
 	text-align: center
 	z-index: -1
 	border: 1px 
-	border: 1px dashed red
+	// border: 1px dashed red
 	padding: 300px 0
 	overflow: hidden
 	h1
@@ -162,15 +162,49 @@ body
 
 			p
 				margin-bottom: 50px
+	// .circle
+	// 	position: absolute
+	// 	width: 100px
+	// 	height: 100px
+	// 	border-radius: 50%
+	// 	// border: 1px solid red
+	// 	cursor: pointer
+	// 	background: #2ba8da
+	// 	position: absolute
+	// 	bottom: -100px
+	// 	left: 50%
+	// 	transform: translate(-50%, -50%)
+	// 	// z-index: 9999
+	// 	cursor: pointer 
+	// 	// display: none
+	// 	img
+	// 		width: 25px
+	// 		position: absolute
+	// 		top: 50%
+	// 		left: 50%
+	// 		transform: translate(-50%, -50%)
+			
+.app
+	text-align: center
+	background: #fff
+	padding: 200px 0
+	position: relative
+	// z-index: -9999
+	// display: none
+	h1
+		font-size: 30px
+		margin-bottom: 35px
+	p
+		color: #74797e
+		margin-bottom: 50px
 	.circle
-		// cursor: pointer ??????????
 		position: absolute
 		width: 100px
 		height: 100px
 		border-radius: 50%
-		border: 1px solid red
+		// border: 1px solid red
 		cursor: pointer
-		background: #2ba8da
+		background: #fff
 		position: absolute
 		bottom: -100px
 		left: 50%
@@ -182,19 +216,6 @@ body
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
-			
-.app
-	text-align: center
-	background: #fff
-	padding: 200px 0
-	position: relative
-	z-index: -2
-	h1
-		font-size: 30px
-		margin-bottom: 35px
-	p
-		color: #74797e
-		margin-bottom: 50px
 	.icons
 		width: 150px
 		height: 150px
@@ -211,17 +232,32 @@ body
 	.paragraph
 		h3
 			margin-bottom: 35px
-			
-
 		p
 			color: #74797e
 			
-
+.app .circle-blue
+	position: absolute
+	width: 100px
+	height: 100px
+	border-radius: 50%
+	// border: 1px solid red
+	cursor: pointer
+	background: #21a9df
+	position: absolute
+	top: -10px
+	left: 50%
+	transform: translate(-50%, -50%)
+	img
+		width: 25px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
 
 .Shuffle-Plugin
 	text-align: center
 	background: #f6f9fa
-	padding: 50px 0
+	padding: 100px 0
 	.content
 		h1
 			font-size: 30px
@@ -268,14 +304,79 @@ body
 			padding: 20px 10px
 			margin: 0
 			font-size: 14px
+			cursor: pointer			
 			img
 				width: 15px
-				cursor: pointer	
 				float: right
 .push-yourself
 	background: url('../img/14.png')
 	background-size: cover
-	width: 100%
+	// width: 100%
 	background-repeat: repeat-y
 	background-position: top, center
 	height: 100vh
+	position: relative
+	.overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: $primary-color
+		background: rgba(30, 3, 62, 0.62)
+	.content
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: #fff
+
+		h1
+			font-size: 60px
+			text-transform: uppercase
+.footer
+
+
+@media (max-width: 480px)
+
+	.navbar .links li
+		background: #431a54
+
+	.hero-section .overlay .contint h1
+		font-size: 35px
+		margin-bottom: 15px
+
+	.hero-section .overlay .contint input
+		margin-bottom: 15px
+
+	.flex-button
+		padding: 4px 15px
+		right: -39px
+		bottom: 10%
+	.hero-section .overlay .contint input
+		padding: 10px 30px
+
+	.hero-section .overlay .contint button
+		padding: 5px 10px
+
+	.hero-section .circle
+		width: 70px
+		height: 70px
+		bottom: -75px
+
+	.design .overlay .content img
+		width: 280px
+
+	.cards .card
+		flex-basis: calc(100% - 20px)
+
+	.Shuffle-Plugin .border button
+		margin: 0
+		padding: 15px 0
+		width: 100%
+	.push-yourself .content h1
+		font-size: 50px
+
+
+
+
