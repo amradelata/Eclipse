@@ -17,22 +17,29 @@ body {
   padding: 15px 50px;
   transform: rotate(270deg);
   right: -62px;
-  bottom: 7%;
+  bottom: 14%;
   z-index: 99999; }
 
 .navbar {
   font-size: 14px;
   height: 0;
   color: #fff;
-  position: relative;
   z-index: 2;
   background: transparent;
-  border: none; }
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .navbar .brand {
   float: left;
   width: 40%;
   margin-top: 10px; }
+
+.navbar .brand img {
+  width: 55px;
+  margin-top: 15px; }
 
 .navbar .links {
   margin-top: 25px; }
@@ -53,8 +60,9 @@ body {
 .navbar-default .navbar-nav button {
   background: #a100ff;
   color: #fff;
+  margin-top: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 8px 20px; }
 
 .navbar-default .navbar-nav button img {
@@ -65,8 +73,7 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center, center;
-  background: url("../img/1.png");
-  margin-top: -70px;
+  background-image: url("../img/1.png");
   position: relative;
   color: #fff; }
   .hero-section .overlay {
@@ -92,7 +99,7 @@ body {
         margin-bottom: 35px; }
       .hero-section .overlay .contint input {
         border: none;
-        padding: 15px 30px;
+        padding: 15px 40px;
         border-radius: 5px;
         color: #727272;
         margin-right: 15px; }
