@@ -369,8 +369,19 @@ body {
     width: 20px; }
 
 @media (max-width: 480px) {
-  .navbar .links li {
-    background: #431a54; }
+  .navbar .links{
+    margin-top: 0;
+    text-align: center;
+  }
+  .navbar .links li a {
+    background: #431a54;
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+  }
+ .navbar-default .navbar-nav button{
+   display: none;
+ }
 
   .hero-section .overlay .contint h1 {
     font-size: 35px;
@@ -419,6 +430,20 @@ body {
     .footer h4 {
       text-align: center; }
     .footer .Tweet {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+    
+    .Shuffle-Plugin .border{
+      width: 100%;
+    }
+    .navbar .brand{
+          float: none;
+    width: 100%;
+    background: #431a54;
+    }
+    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+      margin-right: 0;
+    margin-left: 0;
+    }
+    }
 
 /*# sourceMappingURL=style.css.map */
