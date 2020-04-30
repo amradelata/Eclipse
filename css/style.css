@@ -367,17 +367,64 @@ body {
     padding: 5px 10px; }
   .footer img {
     width: 20px; }
+    /* popup*/
+    .mypopup {
+  display: none;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.mypopup img {
+  width: 350px;
+}
+.mypopup button {
+  /* display: block; */
+  margin: 20px auto;
+  border: none;
+  padding: 10px;
+  background: #2f3640;
+  color: aliceblue;
+}
+.mypopup button a {
+  color: aliceblue;
+}
+    /* popup*/
 
-@media (max-width: 480px) {
-  .navbar .links{
-    margin-top: 0;
-    text-align: center;
+@media screen and (max-width: 760px)   {
+
+  /* popup*/
+  .mypopup img{
+    width: 200px;
   }
+    .mypopup {
+    width: 100%;
+  }
+  .mypopup button {
+    font-size: 15px !important;
+  }
+  /* popup*/
+  .navbar .links{
+    text-align: center;
+    margin-top: 0;
+  }
+  .navbar .brand img{
+    margin: 0;
+    display: none;
+    padding: 0;
+    }
+  
   .navbar .links li a {
     background: #431a54;
     margin: 0;
     padding: 0;
     padding: 20px 0;
+    width: 100vw;
   }
  .navbar-default .navbar-nav button{
    display: none;
@@ -388,15 +435,16 @@ body {
     margin-bottom: 15px; }
 
   .hero-section .overlay .contint input {
-    margin-bottom: 15px; }
+    margin-bottom: 15px; 
+  padding: 10px 30px;
+display: block;}
 
   .flex-button {
     padding: 4px 15px;
     right: -39px;
     bottom: 10%; }
 
-  .hero-section .overlay .contint input {
-    padding: 10px 30px; }
+ 
 
   .hero-section .overlay .contint button {
     padding: 5px 10px; }
@@ -435,15 +483,29 @@ body {
     .Shuffle-Plugin .border{
       width: 100%;
     }
-    .navbar .brand{
-          float: none;
-    width: 100%;
-    background: #431a54;
-    }
+
     .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
       margin-right: 0;
     margin-left: 0;
     }
+
     }
+
+
+@media screen and (max-width: 1200px){
+  .links{
+    position: absolute;
+    right: 20px;
+    /* top: 10px; */
+  }
+  .navbar .links li a {
+
+    margin: 0;
+    padding: 0;
+    padding: 15px;
+  }
+
+
+}
 
 /*# sourceMappingURL=style.css.map */

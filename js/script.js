@@ -1,7 +1,11 @@
 
-            var containerEl = document.querySelector('.container');
+		let containerEl = document.querySelector('.container');
 
-            var mixer = mixitup(containerEl);
+		let mixer = mixitup(containerEl);
+		
+
+		
+			
 
             
 
@@ -27,4 +31,19 @@
 			},1000);
 
 			});
+/* popup*/
+let mypopup = document.getElementById('mypopup');
+function closepopup(){
+	mypopup.style.display = "none";
+}
+	function shwpopup() {
+	setTimeout(function(){ 
 
+		mypopup.style.display = "block";
+
+	 }, 3000);
+	}
+
+	shwpopup() 
+
+	/* popup*/
