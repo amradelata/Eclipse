@@ -99,6 +99,7 @@ body {
     right: 0;
     background: rgba(85, 19, 145, 0.34); }
     .hero-section .overlay .contint {
+    
       position: absolute;
       top: 50%;
       left: 50%;
@@ -436,9 +437,11 @@ body {
 
   .hero-section .overlay .contint input {
     margin-bottom: 15px; 
-  padding: 10px 30px;
-display: block;}
-
+    width: 80%;
+  }
+.herobtn{
+  display: none;
+}
   .flex-button {
     padding: 4px 15px;
     right: -39px;
@@ -504,7 +507,10 @@ display: block;}
     padding: 0;
     padding: 15px;
   }
-
+.hero-section .overlay .contint{
+    width: 100%;
+      text-align: center;
+}
 
 }
 
